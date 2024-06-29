@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <!--Cabecera-->
+  <head>
+    <title>Página HTML básica</title>
+    <meta charset="utf-8">
+    <link type="text/css" href="estilo.css" rel="stylesheet">
+    <script src="js/jquery/jquery-3.7.1.min.js"></script>
+    <script src="js/programa.js"></script>
+  </head>
+  <!--Cuerpo-->
+  <body>
+  <h1>Flexboxes</h1>
+  <p>El contenedor que ves rodeado por una línea roja es un flexbox. Experimenta con las propiedades que ves para entender como funcionan las distintas propiedades de alineamiento.</p>
+  <div id="rejilla">
+    <div id="caja">
+        <div class="cajita" id="caja1">
+            Caja 1
+        </div>
+        <div class="cajita" id="caja2">
+            Caja 2
+        </div>
+        <div class="cajita" id="caja3">
+            Caja 3
+        </div>
+        <div class="cajita" id="caja4">
+            Caja 4
+        </div>
+    </div>
+    <div id="controles">
+      <h4>Dirección del flexbox</h4>
+      <select id="orientacion">
+        <option value="row">Row</option>
+        <option value="row-reverse">Row reverse</option>
+        <option value="column">Column</option>
+        <option value="column-reverse">Column reverse</option>
+      </select>
+      <h4>Wrapping</h4>
+      <p>Para comprobar esto haz muy estrecha la ventana del navegador y modifica esta propiedad.</p>
+      <select id="wrapping">
+        <option value="nowrap">Sin wrapping</option>
+        <option value="wrap">Con wrapping</option>
+        <option value="wrap-reverse">Con wrapping inverso</option>
+      </select>
+      <h4>Alineación de elementos</h4>
+      <select id="alineacion">
+        <option value="justify-content:flex-start">justify-content:flex-start</option>
+        <option value="justify-content:flex-end">justify-content:flex-end</option>
+        <option value="justify-content:space-between">justify-content:space-between</option>
+        <option value="justify-content:space-evenly">justify-content:space-evenly</option>
+      </select>
+    </div>
+  </div>
+  </body>
+</html>
